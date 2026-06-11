@@ -148,7 +148,7 @@ const ExamManagement = () => {
     ];
 
     return (
-        <div className="p-4 md:p-8 max-w-7xl mx-auto space-y-8 min-h-screen 
+        <div className="p-4 md:p-8  mx-auto space-y-8 min-h-screen 
         bg-slate-50 text-slate-900 
         dark:bg-slate-900 dark:text-slate-100 transition-colors duration-300">
 

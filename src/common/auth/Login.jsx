@@ -5,8 +5,8 @@ import { useAuth } from '../context/authcontext';
 import { useLoginMutation } from '../../api/services/authapi';
 
 const Login = () => {
-    const [tenantUsername, setTenantUsername] = useState('jbm');
-    const [password, setPassword] = useState('Abcd123@#');
+    const [tenantUsername, setTenantUsername] = useState('sudhanshu');
+    const [password, setPassword] = useState('SuperAdmin@123');
     const [showPassword, setShowPassword] = useState(false);
     const navigate = useNavigate();
     const [searchParams] = useSearchParams();

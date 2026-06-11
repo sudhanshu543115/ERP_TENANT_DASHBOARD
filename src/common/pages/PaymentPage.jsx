@@ -70,7 +70,7 @@ const PaymentPage = () => {
         const toastId = toast.loading("Creating order...");
 
         try {
-            const orderResponse = await fetch('https://multitenant-uv76.onrender.com/api/v1/subscription-payment/create-order', {
+            const orderResponse = await fetch('http://localhost:5000/api/v1/subscription-payment/create-order', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -97,7 +97,7 @@ const PaymentPage = () => {
                     setVerifying(true); // Start full-screen loader
                     const verifyToastId = toast.loading("Verifying payment...");
                     try {
-                        const verifyResponse = await fetch('https://bt-erp-backend-edww.onrender.com/api/v1/subscription-payment/verify', {
+                        const verifyResponse = await fetch('http://localhost:5000/api/v1/subscription-payment/verify', {
                             method: 'POST',
                             headers: {
                                 'Content-Type': 'application/json'
@@ -171,7 +171,7 @@ const PaymentPage = () => {
         const toastId = toast.loading("Generating QR Code...");
 
         try {
-            const response = await fetch('https://multitenant-uv76.onrender.com/api/v1/subscription-payment/create-qr', {
+            const response = await fetch('http://localhost:5000/api/v1/subscription-payment/create-qr', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -202,7 +202,7 @@ const PaymentPage = () => {
         // We won't toast on every poll tick, only on success/outcome
         const interval = setInterval(async () => {
             try {
-                const response = await fetch(`https://multitenant-uv76.onrender.com/api/v1/subscription-payment/check-status/${qrId}?planId=${plan.id}`, {
+                const response = await fetch(`http://localhost:5000/api/v1/subscription-payment/check-status/${qrId}?planId=${plan.id}`, {
                     credentials: 'include'
                 });
                 const data = await response.json();
