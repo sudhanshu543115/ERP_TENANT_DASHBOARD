@@ -1,5 +1,6 @@
-SUPER ADMIN      -  mt-superadmin.vercel.app/
-TENANT DASHBOARD - erp-tenant-dashboard.vercel.app
+SUPER ADMIN      -  https://mt-superadmin.vercel.app
+
+TENANT DASHBOARD - https://erp-tenant-dashboard.vercel.app
 
 
 
